@@ -12,87 +12,39 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
+      <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#item-1">Item 1</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+          </nav>
+          <a class="nav-link" href="#item-2">Item 2</a>
+          <a class="nav-link" href="#item-3">Item 3</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+          </nav>
+        </nav>
       </nav>
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://i.pinimg.com/originals/81/04/86/8104862c7a208600eb82ceaab26fcc03.jpg" class="d-block w-50" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.pinimg.com/236x/0a/39/f2/0a39f2ef5c110f6197348c80ffe77023.jpg" class="d-block w-50" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.pinimg.com/originals/01/46/cd/0146cd7699b24041eabede1cfd896a9c.jpg" class="d-block w-50" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+        <h4 id="item-1">SARAPAN PAGI</h4>
+        <p>Sarapan pagi menjadi sesuatu yang wajib sebelum memulai aktivitas agar memiliki energi yang cukup. Menu sarapan yang sehat juga memengaruhi kinerja kita, lo. Menu dengan resep sarapan pagi yang baik dapat membantu kita lebih fokus dan dapat bekerja maksimal di pagi hari.</p>
+        <h5 id="item-1-1">MAKAN SIANG</h5>
+        <p>makan siang merupakan istilah yang digunakan saat kamu makan siang tepat waktu, yaitu sekitar pukul 12 hingga 1 siang. Sementara brunch adalah istilah yang digunakan saat kamu makan di antara waktu sarapan dan makanan siang. Biasanya brunch dilakukan oleh orang yang tidak sempat sarapan pagi dan baru bisa makan pada pukul 10 atau 11 siang.</p>
+        <h5 id="item-1-2">MAKAN MALAM</h5>
+        <p>Makan malam adalah waktu untuk makan di malam hari.Bergantung pada daerah dan budaya, makan malam bisa menjadi waktu makan ke-2 maupun ke-3 dalam sehari. Makan malam paling sederhana khasnya terdiri atas daging, ikan, unggas, atau makanan utama tinggi protein lain, disajikan dengan 1 atau 2 sayuran dan/atau dengan sereal atau butir padi - khasnya roti, tetapi kentang, nasi, pasta, dan mi juga umum. Salah satu atau seluruh komponen tersebut dapat disajikan dengan kuah atau saus yang panas atau dingin.</p>
+        <h4 id="item-2">BELAJAR</h4>
+        <p>Belajar adalah perubahan yang relatif permanen dalam potensi perilaku sebagai hasil dari pengalaman atau latihan yang diperkuat. Belajar merupakan akibat adanya interaksi antara stimulus dan respons.[1] Seseorang dianggap telah belajar sesuatu jika dia dapat menunjukkan perubahan perilakunya. Menurut teori ini, dalam belajar yang penting adalah input yang berupa stimulus dan output yang berupa respons.</p>
+        <h4 id="item-3">TIDUR</h4>
+        <p>Tidur adalah keadaan istirahat alami pada berbagai binatang menyusui, burung, ikan, dan binatang tidak bertulang belakang seperti lalat buah Drosophila. Pada manusia dan banyak spesies lainnya, tidur penting untuk kesehatan. Tanda-tanda kehidupan seperti kesadaran, puls, dan frekuensi pernapasan mengalami perubahan.</p>
+        <h5 id="item-3-1">BANGUN TIDUR</h5>
+        <p>...</p>
+        <h5 id="item-3-2">MANDI</h5>
+        <p>...</p>
       </div>
-
-
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
